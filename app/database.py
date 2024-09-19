@@ -58,3 +58,40 @@ class Airplane(Model):
         # pylint: disable=too-few-public-methods
         database = database
         table_name = "airplanes"
+        class Cookbook(Model):
+            """
+            Represents a cookbook entity in the database.
+
+            Attributes:
+                id (AutoField): The primary key for the cookbook.
+                title (CharField): The title of the cookbook (max 100 characters).
+                author (CharField): The author of the cookbook (max 50 characters).
+                publication_year (IntegerField): The year the cookbook was published.
+                price (FloatField): The price of the cookbook.
+                isbn (CharField): The ISBN of the cookbook (10 characters).
+                num_pages (IntegerField): The number of pages in the cookbook.
+                genre (CharField): The genre of the cookbook (max 50 characters).
+            """
+
+            id = AutoField()
+            title = CharField(max_length=50)
+            author = CharField(max_length=50)
+            publication_year = IntegerField()
+            price = FloatField()
+            isbn = CharField(max_length=10)
+            num_pages = IntegerField()
+            genre = CharField(max_length=100)
+
+            class Meta:
+                """
+                Meta class for specifying the database and table name.
+
+                Attributes:
+                    database (MySQLDatabase): The database connection used by the model.
+                    table_name (str): The name of the table in the database.
+                """
+
+                # pylint: disable=too-few-public-methods
+                database = database
+                table_name = "cookbooks"
+
