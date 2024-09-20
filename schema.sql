@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2024 at 11:58 PM
+-- Generation Time: Sep 21, 2024 at 12:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -24,17 +24,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `airplanes`
+-- Table structure for table `cook_books`
 --
 
-CREATE TABLE `airplanes` (
+CREATE TABLE `cook_books` (
   `id` int(11) NOT NULL,
-  `model` varchar(50) NOT NULL,
-  `manufacture_year` int(11) NOT NULL,
-  `seats` int(11) NOT NULL,
-  `airline` varchar(50) NOT NULL,
-  `max_speed` float NOT NULL,
-  `weight` float NOT NULL
+  `isbn` varchar(10) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `author` varchar(50) NOT NULL,
+  `publication_year` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `num_pages` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -42,20 +42,22 @@ CREATE TABLE `airplanes` (
 --
 
 --
--- Indexes for table `airplanes`
+-- Indexes for table `cook_books`
 --
-ALTER TABLE `airplanes`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `cook_books`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `isbn` (`isbn`),
+  ADD UNIQUE KEY `title` (`title`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `airplanes`
+-- AUTO_INCREMENT for table `cook_books`
 --
-ALTER TABLE `airplanes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `cook_books`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
