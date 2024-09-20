@@ -6,7 +6,7 @@ services:
     container_name: database
     restart: always
     ports:
-      - 3306:3306
+      - 3307:3306
     volumes:
       - ./MySQL/volumes:/var/lib/mysql
     hostname: eam_database
@@ -36,7 +36,7 @@ services:
     container_name: backend
     restart: always
     ports:
-      - "8000:80"
+      - "8000:8000"
     depends_on:
       db:
         condition: service_healthy
