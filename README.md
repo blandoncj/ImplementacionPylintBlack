@@ -66,3 +66,9 @@ Para asegurarte de que el código cumple con PEP8, usa Black para formatearlo au
 ```bash
 black .
 ```
+
+
+## Creadores
+
+- **[Jacobo Blandón Castro](https://github.com/blandoncj)**
+- **[Johan Antonio Peña López](https://github.com/Johan0425)**
