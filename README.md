@@ -2,7 +2,7 @@
 
 ## Descripcion del Proyecto
 
-Este proyecto implementa un sistema CRUD para gestionar dos entidades: **Avión** y **Libro de Cocina**
+Este proyecto implementa un sistema CRUD para gestionar dos entidades: **Avión** y **Libro de Cocina**. La aplicación está desplegada y ejecutada utilizando contenedores Docker, lo que facilita su instalación y despliegue en cualquier entorno.
 
 ## Requisitos Previos
 
@@ -45,7 +45,7 @@ docker ps
 
 ### 5. Acceder a la API
 
-El backend de la aplicación estará disponible en [](http://localhost:8000). Visita esta URL para interactuar con las APIs CRUD de las entidades **Avión** y **Libro de Cocina**
+El backend de la aplicación estará disponible en http://localhost:8000. Visita esta URL para interactuar con las APIs CRUD de las entidades **Avión** y **Libro de Cocina**
 
 ### 6. Acceder a Adminer (Gestión de Base de Datos)
 
