@@ -49,7 +49,7 @@ El backend de la aplicación estará disponible en http://localhost:8000. Visita
 
 ### 6. Acceder a Adminer (Gestión de Base de Datos)
 
-Si deseas gestionar visualmente  la base de datos, puedes acceder a Adminer en la url [](http://localhost:8080). Adminer es una herramienta que te permite gestionar las tablas y registros de la base de datos en una interfaz web
+Si deseas gestionar visualmente  la base de datos, puedes acceder a Adminer en la url http://localhost:8080. Adminer es una herramienta que te permite gestionar las tablas y registros de la base de datos en una interfaz web
 
 ## Uso de Pylint
 
@@ -66,7 +66,6 @@ Para asegurarte de que el código cumple con PEP8, usa Black para formatearlo au
 ```bash
 black .
 ```
-
 
 ## Creadores
 
